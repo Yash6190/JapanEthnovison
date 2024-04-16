@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+
+.back-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto; 
+            height: auto; 
+            z-index: -100;
+        }
+        body {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+            border-radius: 15px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .form-control {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .row {
+            display: flex;
+        }
+        .about-me {
+            margin-left: auto;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.4);
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .about-me img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        .about-me h2, .about-me p {
+            margin: 15px 0;
+        }
+
+
+
+.navbar {
+  background-color: #fff; 
+  display: flex; 
+  justify-content: space-between; 
+  padding: 10px 20px; 
+}
+
+.nav-list {
+  list-style: none; 
+  margin: 0; 
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 10px; 
+}
+
+.nav-link {
+  text-decoration: none; 
+  color: #000; 
+  font-weight: bold; 
+}
+
+
+.nav-link:hover {
+  color: #333; 
+}
+
+        
+      
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../anime/3.html">ANIME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../people/2.html">Famous People</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../places/1.html">Famous Places</a>
+          </li>
+        </ul>
+      </nav>
+      
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="./Aether and Paimon Wallpaper _ Web Event _A Journey Through Pages_  _ Genshin Impact.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <form action="/post" method="post" onsubmit="showAlert()">
+                    <div class="form-group">
+                        <label for="name">YOUR Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback">Write your Feedback about the website</label>
+                        <textarea class="form-control" id="feedback" rows="3" placeholder="Enter your feedback"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="dropdown">Which is your favourite tourist place in Japan?</label>
+                        <select class="form-control" id="dropdown">
+                            <option>TOKYO</option>
+                            <option>OSAKA</option>
+                            <option>MOUNT FUJI</option>
+                            <option>KYOTO</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-4 about-me">
+                <img src="./WhatsApp Image 2024-04-13 at 10.15.50 PM.jpeg" alt="Yashvardhan Singh Pathania">
+                <h2>Yashvardhan Singh Pathania</h2>
+                <p>Hello! I'm Yashvardhan, an aspiring front-end developer. I'm currently learning the ins and outs of web development, and I'm passionate about creating user-friendly, accessible websites. When I'm not coding, you can find me exploring the great outdoors or diving into a good book. Thanks for visiting my site!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

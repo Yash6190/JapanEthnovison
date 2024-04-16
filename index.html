@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Main page</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+ 
+  
+<div class="hero">
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="./video/Japan in 8K ULTRA HD - Land of The Rising Sun (60 FPS).mp4" type="video/mp4">
+    </video>
+<div class="content">
+  <p id="fadeInOut" class="fade-in animated" style="color: white; font-weight: 200; font-size: 50px;">Welcome to the gateway to Japan – where tradition meets innovation, and culture thrives in every corner.</p>
+
+    <h1>JAPAN</h1>
+    <a href="./form.html">Explore</a>
+</div>
+
+<style>
+ .fade-in {
+      opacity: 0;  
+      color: white;
+      font-weight: 200;
+      font-size: 50px;
+      transition: opacity 1s ease-in-out; 
+    }
+
+    .animated.fade-in {
+      animation-name: fadeIn; 
+      animation-duration: 1s; 
+      animation-fill-mode: forwards;  
+      animation-iteration-count: 1; 
+    }
+
+    #fadeInOut.fade-out {
+      animation-name: fadeOut;  
+      animation-duration: 1s; 
+      animation-fill-mode: forwards; 
+      animation-iteration-count: 1;  
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }  
+      to { opacity: 1; }  
+    }
+
+    @keyframes fadeOut {
+      from { opacity: 1; }  
+      to { opacity: 0; }
+    }
+
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .content h1 {
+        font-size: 68px;
+    }
+    .content a {
+        font-size: 36px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+  .navbar li {
+    float: none;
+  }
+}
+</style>
+
+</div>
+
+</body>
+
+<footer class="footer mt-auto py-3 bg-dark fixed-bottom">
+         
+  <span class="text-light">Copyright &copy; 2024 | Created by Yashvardhan Singh Pathania | <a href="mailto:yashpathania@61@gmail.com" class="text-light">yashpathania@61@gmail.com</a></span>
+
+</footer>
+<script>
+
+    window.onload = function() {
+      const paragraph = document.getElementById('fadeInOut');
+
+      setTimeout(() => {
+        paragraph.classList.add('fade-out');
+      }, 10000);
+    };
+ 
+</script>
+
+
+
+</html>
